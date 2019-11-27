@@ -11,7 +11,7 @@ class HomePageTemp extends StatelessWidget {
         title: Text("Components Temporales"),
       ),
       body: ListView(
-        children: _crearItemCorto()
+        children: _crearItems()
         
       ),
     );
