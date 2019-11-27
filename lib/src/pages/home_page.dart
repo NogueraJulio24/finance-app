@@ -15,11 +15,19 @@ class HomePage extends StatelessWidget {
 
   Widget _lista() {
 
-    menuProvider.cargarData();
-    
-    return ListView(
-      children: _listaItems(),
+    // menuProvider.cargarData()
+
+    return FutureBuilder(
+      future: menuProvider.cargarData(),
+      initialData: [],
+      builder: ( context, AsyncSnapshot<List<dynamic>> snapshot){
+        // Se dispara en varias etapas
+        return ListView(
+          children: _listaItems(),
+        );
+      },
     );
+    // 
   }
 
   List<Widget> _listaItems() {
