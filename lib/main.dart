@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:finance_app/src/pages/home_tem.dart';
+import 'package:finance_app/src/pages/home_page.dart';
  
 void main() => runApp(MyApp());
  
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Components app',
       debugShowCheckedModeBanner: false,
-      home: HomePageTemp()
+      home: HomePage()
     );
   }
 }
