@@ -1,5 +1,5 @@
-import 'package:finance_app/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
+import 'package:finance_app/src/utils/icono_string_util.dart';
 import 'package:finance_app/src/providers/menu_provider.dart';
 
 class HomePage extends StatelessWidget {
