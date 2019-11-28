@@ -1,3 +1,4 @@
+import 'package:finance_app/src/pages/alert_page.dart';
 import 'package:flutter/material.dart';
 import 'package:finance_app/src/utils/icono_string_util.dart';
 import 'package:finance_app/src/providers/menu_provider.dart';
@@ -24,14 +25,14 @@ class HomePage extends StatelessWidget {
       builder: ( context, AsyncSnapshot<List<dynamic>> snapshot){
         // Se dispara en varias etapas
         return ListView(
-          children: _listaItems( snapshot.data ),
+          children: _listaItems( snapshot.data, context ),
         );
       },
     );
     // 
   }
 
-  List<Widget> _listaItems( List<dynamic> data ) {
+  List<Widget> _listaItems( List<dynamic> data , BuildContext context) {
 
     final List<Widget> opciones = [];
 
@@ -42,6 +43,12 @@ class HomePage extends StatelessWidget {
         leading: getIcon(opt['icon']),
         trailing: Icon( Icons.keyboard_arrow_right, color: Colors.blue),
         onTap: (){
+
+          final route = MaterialPageRoute(
+            builder: ( context )  => AlertPage()
+          );
+          
+          Navigator.push(context, route);
 
         },
       );
