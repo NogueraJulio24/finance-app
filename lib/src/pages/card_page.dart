@@ -12,7 +12,20 @@ class CardPage extends StatelessWidget {
         children: <Widget>[
           _cardTipo1(),
           SizedBox(height: 30.0),
-          _cardTipo2()
+          _cardTipo2(),
+          SizedBox(height: 30.0),
+          _cardTipo1(),
+          SizedBox(height: 30.0),
+          _cardTipo2(),
+          SizedBox(height: 30.0),
+          _cardTipo1(),
+          SizedBox(height: 30.0),
+          _cardTipo2(),
+          SizedBox(height: 30.0),
+          _cardTipo1(),
+          SizedBox(height: 30.0),
+          _cardTipo2(),
+          SizedBox(height: 30.0)
             ],
           ),
         );
