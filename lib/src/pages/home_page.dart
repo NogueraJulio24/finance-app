@@ -1,3 +1,4 @@
+import 'package:finance_app/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
 import 'package:finance_app/src/providers/menu_provider.dart';
 
@@ -38,7 +39,7 @@ class HomePage extends StatelessWidget {
 
       final widgetTemp = ListTile(
         title: Text( opt['texto']),
-        leading: Icon( Icons.save, color: Colors.red ),
+        leading: getIcon(opt['icon']),
         trailing: Icon( Icons.keyboard_arrow_right, color: Colors.blue),
         onTap: (){
 
